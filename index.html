@@ -21,7 +21,7 @@
     <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="assets/favicon-192.png" type="image/png" sizes="192x192">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20260527-qa">
+    <link rel="stylesheet" href="styles.css?v=20260528-redesign">
   </head>
   <body>
     <header class="site-header">
@@ -30,6 +30,7 @@
       </a>
       <nav class="site-nav" aria-label="主要ナビゲーション">
         <a href="#works">Works</a>
+        <a href="#materials">Materials</a>
         <a href="#updates">Updates</a>
         <a href="#links">Links</a>
         <a href="#about">About</a>
@@ -45,61 +46,69 @@
             いわみ しょうによる、短編RPGを中心とした個人ゲーム制作ブランドです。
           </p>
           <p class="quiet-copy">
-            レトロな画面の中に、小さな違和感、会話、分岐、キャラクターを置いています。
+            小さなマップ、会話、分岐、キャラクターの違和感を手触りとして残すゲームを作っています。
           </p>
           <div class="hero-actions" aria-label="主要リンク">
             <a class="button primary" href="#works">作品を見る</a>
-            <a class="button secondary" href="#updates">更新を見る</a>
+            <a class="button secondary" href="#materials">必要な画像を見る</a>
           </div>
-          <ul class="hero-notes" aria-label="制作の特徴">
-            <li>1マップ</li>
-            <li>戦闘なし</li>
-            <li>マルチエンド</li>
-          </ul>
         </div>
 
-        <div class="hero-visual">
-          <figure class="image-slot hero-media" aria-label="メインビジュアル画像の予定枠">
-            <span class="slot-label">Main visual</span>
-            <img src="assets/iwamycraft_logomark_light.png" alt="" aria-hidden="true">
-            <figcaption>
-              ここに作品のタイトル画面、キービジュアル、またはゲーム画面を入れる予定です。
-            </figcaption>
-          </figure>
+        <figure class="visual-slot hero-visual has-image">
+          <span class="slot-kicker">Main visual</span>
+          <img src="assets/nene-flower-quest-title.png" alt="ネネは花を咲かせたい！のタイトル画面">
+          <figcaption>
+            仮キービジュアルとしてタイトル画面を配置しています。正式なメイン画像ができたら差し替えます。
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="materials strip" id="materials" aria-labelledby="materials-title">
+        <div class="strip-title">
+          <p class="eyebrow">Materials</p>
+          <h2 id="materials-title">ほしい画像</h2>
+        </div>
+        <div class="material-list">
+          <article>
+            <span>01</span>
+            <h3>メインビジュアル</h3>
+            <p>現在はタイトル画面を仮配置中。ブランドの顔になる一枚に差し替え予定。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>ゲーム画面</h3>
+            <p>プレイ中の画面を作品紹介に配置中。追加カットがあれば増やせます。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>キャラクター</h3>
+            <p>ネネ、または象徴的なキャラクターを紹介できる画像。</p>
+          </article>
         </div>
       </section>
 
-      <aside class="asset-guide" aria-label="今後追加する画像素材">
-        <span>画像素材の予定</span>
-        <p>メインビジュアル、作品スクリーンショット、紹介用イラストを差し替えられる枠として残しています。</p>
-      </aside>
-
       <section class="section works" id="works" aria-labelledby="works-title">
-        <div class="section-head compact">
+        <div class="section-head">
           <p class="eyebrow">Works</p>
           <h2 id="works-title">作品</h2>
-          <p>
-            まずは、最初の短編RPGをきちんと置くためのページです。
-          </p>
+          <p>まずは、最初の短編RPGをきちんと置くための入口です。</p>
         </div>
 
         <article class="work-feature">
-          <figure class="image-slot work-art" aria-label="作品画像の予定枠">
-            <span class="slot-label">Game image</span>
-            <img src="assets/iwamycraft_logomark_dark.png" alt="" aria-hidden="true">
+          <figure class="visual-slot work-visual has-image">
+            <span class="slot-kicker">Game image</span>
+            <img src="assets/nene-flower-quest-gameplay.png" alt="ネネは花を咲かせたい！のゲーム画面">
             <figcaption>
-              作品スクリーンショット、タイトルロゴ、紹介用イラストを入れる予定です。
+              プレイ中の画面を仮配置しています。紹介用スクリーンショットとして差し替え可能です。
             </figcaption>
           </figure>
+
           <div class="work-copy">
             <p class="status">公開中</p>
             <h3>ネネは花を咲かせたい！</h3>
             <p>
               花を咲かせたいネネと、世界の仕組みをめぐる短編RPG。
               1マップ、戦闘なし、マルチエンドの小さな作品です。
-            </p>
-            <p class="work-note">
-              配布ページや紹介画像が整い次第、この枠を正式な作品入口として更新します。
             </p>
             <dl class="spec-list">
               <div>
@@ -121,53 +130,51 @@
             </div>
           </div>
         </article>
-
-        <p class="single-note">作品の配布先、更新情報、制作メモへの入口をこのページにまとめています。</p>
       </section>
 
       <section class="section updates" id="updates" aria-labelledby="updates-title">
-        <div class="section-head compact">
+        <div class="section-head">
           <p class="eyebrow">Updates</p>
           <h2 id="updates-title">更新</h2>
           <p>進んだ日も、あまり進まなかった日も、できるだけ記録します。</p>
         </div>
         <div class="update-list" aria-label="更新一覧">
-          <a class="update-card" href="#top">
+          <a class="update-row" href="#top">
             <time datetime="2026-05">2026.05</time>
-            <h3>作品ページを公開しました</h3>
-            <p>最初の短編RPGへの入口として、ホームページを整えました。</p>
+            <strong>作品ページを公開しました</strong>
+            <span>最初の短編RPGへの入口として、ホームページを整えました。</span>
           </a>
-          <a class="update-card" href="#works">
+          <a class="update-row" href="#works">
             <time datetime="2026-05">Works</time>
-            <h3>ネネは花を咲かせたい！</h3>
-            <p>作品ページへの入口を、いちばん見つけやすい場所に置いています。</p>
+            <strong>ネネは花を咲かせたい！</strong>
+            <span>作品ページへの入口を、いちばん見つけやすい場所に置いています。</span>
           </a>
-          <a class="update-card" href="#links">
+          <a class="update-row" href="#links">
             <time datetime="2026-05">Links</time>
-            <h3>外部リンク整理中</h3>
-            <p>X、note、itch.ioへの導線を仮で置いています。</p>
+            <strong>外部リンク整理中</strong>
+            <span>X、note、itch.ioへの導線を仮で置いています。</span>
           </a>
         </div>
       </section>
 
       <section class="section links" id="links" aria-labelledby="links-title">
-        <div class="section-head compact">
+        <div class="section-head">
           <p class="eyebrow">Links</p>
           <h2 id="links-title">リンク</h2>
           <p>お知らせ、制作メモ、ゲームの公開先をまとめています。正式なリンクは、準備できたものから置いていきます。</p>
         </div>
-        <div class="link-grid" aria-label="外部リンク一覧">
-          <a class="link-card is-pending" href="#links" aria-label="Xのリンクは準備中です">
+        <div class="link-list" aria-label="外部リンク一覧">
+          <a class="link-row is-pending" href="#links" aria-label="Xのリンクは準備中です">
             <span>X</span>
             <strong>お知らせ</strong>
             <small>日常、制作過程、更新のお知らせ。リンク準備中。</small>
           </a>
-          <a class="link-card is-pending" href="#links" aria-label="noteのリンクは準備中です">
+          <a class="link-row is-pending" href="#links" aria-label="noteのリンクは準備中です">
             <span>note</span>
             <strong>制作メモ</strong>
             <small>考えたこと、作っているものの記録。リンク準備中。</small>
           </a>
-          <a class="link-card is-pending" href="#links" aria-label="itch.ioのリンクは準備中です">
+          <a class="link-row is-pending" href="#links" aria-label="itch.ioのリンクは準備中です">
             <span>itch.io</span>
             <strong>ゲーム公開先</strong>
             <small>公開中のゲーム、配布ページ。リンク準備中。</small>
@@ -176,9 +183,11 @@
       </section>
 
       <section class="section about" id="about" aria-labelledby="about-title">
-        <div class="about-mark" aria-hidden="true">
-          <img src="assets/iwamycraft_logomark_light.png" alt="">
-        </div>
+        <figure class="about-mark" aria-hidden="true">
+          <div class="sprite-stage">
+            <span class="maker-sprite"></span>
+          </div>
+        </figure>
         <div class="about-copy">
           <p class="eyebrow">About</p>
           <h2 id="about-title">つくっている人</h2>
@@ -195,7 +204,6 @@
           </p>
         </div>
       </section>
-
     </main>
 
     <footer class="site-footer">
@@ -210,7 +218,7 @@
       document.body.classList.add("js-ready");
 
       const revealTargets = document.querySelectorAll(
-        ".section-head, .work-feature, .single-note, .update-card, .link-card, .about-mark, .about-copy"
+        ".strip, .section-head, .work-feature, .update-row, .link-row, .about-mark, .about-copy"
       );
 
       revealTargets.forEach((target) => {
