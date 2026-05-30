@@ -6,10 +6,17 @@ GitHub Pages で公開するホームページ用フォルダ。
 
 - `index.html`: 公開ページ本体
 - `styles.css`: 見た目
+- `pixel-home.html`: ピクセル背景案
+- `pixel-home.css`: ピクセル背景案の見た目
+- `index3.html`: 注釈付きワイヤーフレーム準拠案
+- `index3.css`: 注釈付きワイヤーフレーム準拠案の見た目
+- `portal.html`: 3つのページ案を比較する統合入口
+- `portal.css`: 統合入口の見た目
 - `assets/`: 公開ページで使う素材
   - `iwamycraft_logo_*.png`: ロゴ一式
   - `nene-flower-quest-title.png`: 作品タイトル画面
   - `nene-flower-quest-gameplay.png`: 作品プレイ画面
+  - `nene-flower-quest-main-visual.jpg`: 作品メインビジュアル
   - `iwamy-sho-walk-sprite.png`: 作者紹介の歩行スプライト
 
 ## 素材ファイル名のルール
