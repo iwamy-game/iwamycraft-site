@@ -5,6 +5,7 @@ GitHub Pages で公開するホームページ用フォルダ。
 ## 役割
 
 - `index.html`: 公開ページ本体
+- `works/nene-flower-quest.html`: 「ネネは花を咲かせたい！」固有ページ
 - `styles.css`: 見た目
 - `pixel-home.html`: ピクセル背景案
 - `pixel-home.css`: ピクセル背景案の見た目
