@@ -21,7 +21,7 @@
     <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="assets/favicon-192.png" type="image/png" sizes="192x192">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20260531-brand">
+    <link rel="stylesheet" href="styles.css?v=20260531-no-sprite-decor">
   </head>
   <body class="brand-site">
     <header class="site-header">
@@ -31,122 +31,143 @@
       <nav class="site-nav" aria-label="主要ナビゲーション">
         <a href="#works"><span>作品</span><small>Works</small></a>
         <a href="#creator"><span>制作者</span><small>Creator</small></a>
-        <a href="#follow"><span>フォロー</span><small>Follow</small></a>
+        <a href="#links"><span>リンク</span><small>Links</small></a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
+        <figure class="hero-image" aria-labelledby="main-visual-title">
+          <img src="assets/nene-flower-quest-main-visual.jpg" alt="ネネは花を咲かせたい！のメインビジュアル">
+          <figcaption id="main-visual-title">ネネは花を咲かせたい！のメインビジュアル</figcaption>
+        </figure>
         <div class="hero-copy">
           <p class="eyebrow">Creative workshop</p>
-          <h1 id="hero-title">Iwamycraft</h1>
+          <h1 id="hero-title" class="hero-title-logo">
+            <img src="assets/iwamycraft_logotype_white.png" alt="Iwamycraft">
+          </h1>
           <p class="tagline">つくりかけの世界へ。</p>
           <p class="lead">
             戦闘のないRPGや、小さな物語のある作品を制作しています。
             完成品だけではなく、育っていく過程も含めて楽しめる創作工房です。
           </p>
         </div>
-
-        <figure class="brand-visual has-image" aria-labelledby="main-visual-title">
-          <img src="assets/nene-flower-quest-main-visual.jpg" alt="ネネは花を咲かせたい！のメインビジュアル">
-          <figcaption id="main-visual-title">ネネは花を咲かせたい！のメインビジュアル</figcaption>
-        </figure>
-      </section>
-
-      <section class="current-work" aria-labelledby="current-work-title">
-        <div class="section-kicker">
-          <p>公開中の作品</p>
-          <span>Current work</span>
-        </div>
-        <article class="current-card">
-          <figure class="work-thumb has-image">
-            <img src="assets/nene-flower-quest-gameplay.png" alt="ネネは花を咲かせたい！のゲーム画面">
-          </figure>
-          <div class="current-copy">
-            <h2 id="current-work-title">ネネは花を咲かせたい</h2>
-            <p>枯れかけた花を咲かせるための小さな冒険RPG。</p>
-          </div>
-          <a class="text-link" href="#works">作品を見る</a>
-        </article>
       </section>
 
       <section class="section works" id="works" aria-labelledby="works-title">
         <div class="section-head">
           <p class="eyebrow">Works</p>
-          <h2 id="works-title">ゲーム一覧</h2>
-          <p>ゲームを主役にした作品一覧です。キャラクター、設定、イラスト、ドット絵は各ゲームの中に紐づいて増えていきます。</p>
+          <h2 id="works-title">作品</h2>
+          <p>新しい作品から順に並べています。</p>
         </div>
-        <article class="game-feature">
-          <figure class="game-image has-image">
-            <img src="assets/nene-flower-quest-title.png" alt="ネネは花を咲かせたい！のタイトル画面">
-          </figure>
-          <div class="game-copy">
-            <p class="status">Game</p>
-            <h3>ネネは花を咲かせたい！</h3>
-            <p>
-              花を咲かせたいネネと、世界の仕組みをめぐる短編RPG。
-              1マップ、戦闘なし、マルチエンドの小さな作品です。
-            </p>
-            <dl class="game-flow">
-              <div>
-                <dt>作品ページ</dt>
-                <dd>ゲームの紹介と公開先</dd>
-              </div>
-              <div>
-                <dt>キャラクター</dt>
-                <dd>ネネ、ココ、エドガー、バロッサ</dd>
-              </div>
-              <div>
-                <dt>設定 / イラスト / ドット絵</dt>
-                <dd>作品に紐づく素材として追加予定</dd>
-              </div>
-            </dl>
-          </div>
-        </article>
+        <div class="games-list" aria-label="ゲーム作品一覧">
+          <article class="game-entry">
+            <figure class="game-image has-image">
+              <img src="assets/nene-flower-quest-gameplay.png" alt="ネネは花を咲かせたい！のゲーム画面">
+            </figure>
+            <div class="game-copy">
+              <p class="status">公開中 / Game</p>
+              <h3>ネネは花を咲かせたい！</h3>
+              <p>
+                枯れかけた花を咲かせるための小さな冒険RPG。
+                1マップ、戦闘なし、マルチエンドの短編作品です。
+              </p>
+              <dl class="game-flow">
+                <div>
+                  <dt>ジャンル</dt>
+                  <dd>短編RPG</dd>
+                </div>
+                <div>
+                  <dt>プレイ時間</dt>
+                  <dd>短め</dd>
+                </div>
+                <div>
+                  <dt>特徴</dt>
+                  <dd>1マップ / 戦闘なし / マルチエンド</dd>
+                </div>
+                <div>
+                  <dt>公開先</dt>
+                  <dd>準備中</dd>
+                </div>
+              </dl>
+              <a class="text-link" href="#links">公開先を見る</a>
+            </div>
+          </article>
+          <article class="game-entry is-upcoming">
+            <figure class="game-image placeholder-image">
+              <figcaption>ここに次の作品のイメージ</figcaption>
+            </figure>
+            <div class="game-copy">
+              <p class="status">準備中 / Next game</p>
+              <h3>準備中の作品</h3>
+              <p>
+                次のゲームや小さな物語が形になってきたら、
+                ここに作品画像と紹介文を追加していきます。
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="section creator" id="creator" aria-labelledby="creator-title">
-        <figure class="creator-portrait sprite-portrait" aria-label="いわみしょうの歩行ドット絵">
-          <span class="creator-sprite" aria-hidden="true"></span>
-          <figcaption>歩行ドット絵</figcaption>
-        </figure>
-        <div class="creator-copy">
+        <div class="section-head">
           <p class="eyebrow">Creator</p>
           <h2 id="creator-title">制作者</h2>
-          <p class="creator-name">いわみしょう</p>
-          <p>
-            個人ゲームクリエイター、イラストレーター。
-            戦闘のないRPGや、小さな物語のある作品を制作しています。
-          </p>
-          <p>
-            現在はゲーム制作を中心に、
-            キャラクターやグッズの展開にも取り組んでいます。
-          </p>
+          <p>作品をつくっている人のこと。</p>
+        </div>
+        <div class="creator-body">
+          <figure class="creator-portrait sprite-portrait" aria-label="いわみしょうの歩行ドット絵">
+            <span class="creator-sprite" aria-hidden="true"></span>
+            <figcaption>歩行ドット絵</figcaption>
+          </figure>
+          <div class="creator-copy">
+            <p class="creator-name">いわみしょう</p>
+            <p>
+              個人ゲームクリエイター、イラストレーター。
+              戦闘のないRPGや、小さな物語のある作品を制作しています。
+            </p>
+            <p>
+              現在はゲーム制作を中心に、
+              キャラクターやグッズの展開にも取り組んでいます。
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="section follow" id="follow" aria-labelledby="follow-title">
+      <section class="section follow" id="links" aria-labelledby="links-title">
         <div class="section-head">
-          <p class="eyebrow">Follow</p>
-          <h2 id="follow-title">フォロー</h2>
-          <p>制作の記録や最新情報はこちらで更新しています。</p>
+          <p class="eyebrow">Links</p>
+          <h2 id="links-title">リンク</h2>
+          <p>公開先や制作記録をまとめています。</p>
         </div>
         <div class="follow-list" aria-label="外部リンク一覧">
-          <a href="#follow" aria-label="Xのリンクは準備中です">
-            <span>X</span>
-            <strong>制作の記録</strong>
+          <a href="#links" aria-label="Xのリンクは準備中です">
+            <span class="link-badge">X</span>
+            <span class="link-copy">
+              <strong>制作の記録</strong>
+              <small>日々の更新や短いお知らせ</small>
+            </span>
           </a>
-          <a href="#follow" aria-label="noteのリンクは準備中です">
-            <span>note</span>
-            <strong>制作ノート</strong>
+          <a href="#links" aria-label="noteのリンクは準備中です">
+            <span class="link-badge">note</span>
+            <span class="link-copy">
+              <strong>制作ノート</strong>
+              <small>作品づくりの話、考えたこと</small>
+            </span>
           </a>
-          <a href="#follow" aria-label="itch.ioのリンクは準備中です">
-            <span>itch.io</span>
-            <strong>ゲームを遊ぶ</strong>
+          <a href="#links" aria-label="itch.ioのリンクは準備中です">
+            <span class="link-badge">itch.io</span>
+            <span class="link-copy">
+              <strong>ゲームを遊ぶ</strong>
+              <small>公開中のゲーム、体験版</small>
+            </span>
           </a>
-          <a href="#follow" aria-label="BOOTHのリンクは準備中です">
-            <span>BOOTH</span>
-            <strong>グッズを見る</strong>
+          <a href="#links" aria-label="BOOTHのリンクは準備中です">
+            <span class="link-badge">BOOTH</span>
+            <span class="link-copy">
+              <strong>グッズを見る</strong>
+              <small>ステッカー、ZINEなど</small>
+            </span>
           </a>
         </div>
       </section>
@@ -165,7 +186,7 @@
       document.body.classList.add("js-ready");
 
       const revealTargets = document.querySelectorAll(
-        ".current-work, .section-head, .game-feature, .creator-portrait, .creator-copy, .follow-list a"
+        ".section-head, .creator-portrait, .creator-copy, .follow-list a"
       );
 
       revealTargets.forEach((target) => {
