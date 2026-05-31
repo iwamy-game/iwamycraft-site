@@ -367,47 +367,23 @@ h3 {
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  flex: 0 0 min(720px, 86vw);
-  gap: clamp(20px, 3vw, 30px);
+  flex: 0 0 min(520px, 78vw);
+  gap: clamp(14px, 2.4vw, 20px);
   align-items: stretch;
   overflow: hidden;
-  padding: clamp(16px, 3vw, 24px);
+  padding: clamp(14px, 2.4vw, 18px);
   border: 2px solid var(--ink);
   border-radius: 10px 10px 28px 28px;
   background:
-    linear-gradient(90deg, transparent 0 calc(100% - 34px), rgb(var(--ink-rgb) / 0.12) calc(100% - 34px) calc(100% - 30px), transparent calc(100% - 30px)),
     linear-gradient(180deg, var(--rust) 0 46px, transparent 46px),
     linear-gradient(rgb(var(--ink-rgb) / 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgb(var(--ink-rgb) / 0.035) 1px, transparent 1px),
     rgb(var(--paper-rgb) / 0.82);
-  background-size: auto, auto, 22px 22px, 22px 22px, auto;
+  background-size: auto, 22px 22px, 22px 22px, auto;
   box-shadow:
     inset 0 -12px 0 rgb(var(--ink-rgb) / 0.08),
     0 14px 36px rgb(var(--ink-rgb) / 0.1);
   scroll-snap-align: start;
-}
-
-.game-entry::before,
-.game-entry::after {
-  position: absolute;
-  z-index: 1;
-  width: 54px;
-  height: 16px;
-  border: 2px solid rgb(var(--ink-rgb) / 0.7);
-  border-top: 0;
-  border-radius: 0 0 999px 999px;
-  background: var(--paper);
-  content: "";
-}
-
-.game-entry::before {
-  top: 0;
-  left: 24px;
-}
-
-.game-entry::after {
-  top: 0;
-  right: 24px;
 }
 
 .games-list::-webkit-scrollbar {
@@ -427,12 +403,11 @@ h3 {
 .game-entry.is-upcoming {
   color: rgb(var(--ink-rgb) / 0.72);
   background:
-    linear-gradient(90deg, transparent 0 calc(100% - 34px), rgb(var(--ink-rgb) / 0.1) calc(100% - 34px) calc(100% - 30px), transparent calc(100% - 30px)),
     linear-gradient(180deg, var(--moss) 0 46px, transparent 46px),
     linear-gradient(rgb(var(--ink-rgb) / 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgb(var(--ink-rgb) / 0.035) 1px, transparent 1px),
     rgb(var(--paper-rgb) / 0.72);
-  background-size: auto, auto, 22px 22px, 22px 22px, auto;
+  background-size: auto, 22px 22px, 22px 22px, auto;
 }
 
 .game-image {
@@ -477,11 +452,14 @@ h3 {
 }
 
 .game-copy h3 {
-  font-size: clamp(1.9rem, 4vw, 3.2rem);
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
 }
 
-.game-copy .text-link {
-  margin-top: clamp(12px, 2vw, 20px);
+.game-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: clamp(14px, 2vw, 18px);
 }
 
 .status {
@@ -496,29 +474,9 @@ h3 {
   font-weight: 900;
 }
 
-.game-flow {
-  display: grid;
-  margin: clamp(24px, 4vw, 36px) 0 0;
-  border-top: 1px solid var(--line);
-}
-
-.game-flow div {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2px;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.game-flow dt {
-  color: var(--mustard-deep);
-  font-weight: 900;
-}
-
-.game-flow dd {
-  margin: 0;
-  color: var(--ink-soft);
-  font-weight: 800;
+.text-link.secondary {
+  background: rgb(var(--paper-rgb) / 0.46);
+  color: var(--ink);
 }
 
 .creator {
@@ -736,7 +694,7 @@ h3 {
   }
 
   .game-entry {
-    flex-basis: min(620px, 86vw);
+    flex-basis: min(460px, 82vw);
   }
 
   .hero {
