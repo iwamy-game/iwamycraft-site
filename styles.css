@@ -705,6 +705,71 @@ h3 {
   font-weight: 800;
 }
 
+.not-found-page {
+  min-height: 100svh;
+}
+
+.not-found-page main {
+  min-height: calc(100svh - 72px);
+}
+
+.not-found {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.34fr);
+  gap: clamp(var(--space-8), 6vw, var(--space-16));
+  align-items: center;
+  min-height: calc(100svh - 72px);
+  padding:
+    clamp(var(--space-12), 8vw, var(--space-24))
+    max(var(--section-x), calc((100vw - var(--measure)) / 2));
+}
+
+.not-found-copy {
+  max-width: var(--layout-text);
+}
+
+.not-found-copy h1 {
+  margin-bottom: var(--space-4);
+  font-size: clamp(var(--type-heading-large), 8vw, 5.25rem);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+
+.not-found-copy .lead {
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.not-found-mark {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  margin: 0;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-large);
+  background:
+    linear-gradient(rgb(var(--ink-rgb) / 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--ink-rgb) / 0.04) 1px, transparent 1px),
+    rgb(var(--paper-rgb) / 0.54);
+  background-size: 22px 22px;
+}
+
+.not-found-mark img {
+  width: min(46%, 132px);
+  opacity: 0.86;
+}
+
+.not-found-mark figcaption {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-3);
+  color: var(--rust);
+  font-family: var(--font-mono);
+  font-size: var(--type-label);
+  font-weight: 900;
+}
+
 .creator {
   background:
     radial-gradient(circle at 12% 32%, rgb(var(--mustard-rgb) / 0.12), transparent 28%),
@@ -907,7 +972,8 @@ h3 {
 
 @media (max-width: 980px) {
   .work-hero,
-  .summary-grid {
+  .summary-grid,
+  .not-found {
     grid-template-columns: 1fr;
   }
 
@@ -917,6 +983,10 @@ h3 {
 
   .work-hero-media {
     order: 2;
+  }
+
+  .not-found-mark {
+    width: min(280px, 100%);
   }
 
   .creator-body {
@@ -1012,6 +1082,12 @@ h3 {
     gap: var(--space-6);
     padding-top: var(--space-8);
     padding-bottom: var(--space-10);
+  }
+
+  .not-found {
+    min-height: calc(100svh - 64px);
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
   }
 
   .work-hero-copy h1 {
