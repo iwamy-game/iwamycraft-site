@@ -11,7 +11,9 @@ GitHub Pages で公開するホームページ用フォルダ。
 - `pixel-home.css`: ピクセル背景案の見た目
 - `index3.html`: 注釈付きワイヤーフレーム準拠案
 - `index3.css`: 注釈付きワイヤーフレーム準拠案の見た目
-- `portal.html`: 3つのページ案を比較する統合入口
+- `index4.html`: 作品と作者を好きになってもらう目的から再設計した作品ポータル案
+- `index4.css`: 作品ポータル案の見た目
+- `portal.html`: 4つのページ案を比較する統合入口
 - `portal.css`: 統合入口の見た目
 - `assets/`: 公開ページで使う素材
   - `iwamycraft_logo_*.png`: ロゴ一式
