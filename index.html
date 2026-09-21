@@ -2,198 +2,122 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta
-      name="description"
-      content="Iwamycraftは、ゲーム、キャラクター、イラスト、ドット絵などを制作する個人の創作工房です。"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="IWAMYCRAFTは、いわみしょうが個人でゲームやイラストを制作する活動名です。戦闘のない短編RPGを中心に制作しています。">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Iwamycraft | つくりかけの世界へ">
-    <meta
-      property="og:description"
-      content="完成品だけではなく、育っていく過程も含めて楽しめる創作工房ブランドです。"
-    >
+    <meta property="og:title" content="IWAMYCRAFT | こつこつ、制作中">
+    <meta property="og:description" content="戦闘のない短編RPGを中心に、ゲームやイラストを個人で制作しています。">
     <meta property="og:image" content="assets/ogp-logo-base.png">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Iwamycraft | つくりかけの世界へ</title>
+    <title>IWAMYCRAFT | こつこつ、制作中</title>
     <link rel="icon" href="assets/favicon.ico" sizes="any">
-    <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
     <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
-    <link rel="icon" href="assets/favicon-192.png" type="image/png" sizes="192x192">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css?v=20260613-design-system">
+    <link rel="stylesheet" href="tokens.css?v=20260921">
+    <link rel="stylesheet" href="styles.css?v=20260921">
+    <script defer src="games-data.js?v=20260921"></script>
+    <script defer src="site.js?v=20260921"></script>
   </head>
-  <body class="brand-site">
+  <body>
+    <a class="skip-link" href="#main">本文へ移動</a>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Iwamycraft home">
-        <img src="assets/iwamycraft_logo_light.png" alt="Iwamycraft">
+      <a class="brand" href="#top" aria-label="IWAMYCRAFT トップ">
+        <img src="assets/iwamycraft_logo_dark.png" width="772" height="292" alt="IWAMYCRAFT">
       </a>
       <nav class="site-nav" aria-label="主要ナビゲーション">
-        <a href="#works"><span>作品</span><small>Works</small></a>
-        <a href="#creator"><span>制作者</span><small>Creator</small></a>
-        <a href="#links"><span>リンク</span><small>Links</small></a>
+        <a href="#works">Games</a>
+        <a href="#art-goods">Art &amp; Goods</a>
+        <a href="#about">About</a>
+        <a href="#links">Links</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <figure class="hero-image" aria-labelledby="main-visual-title">
-          <img src="assets/nene-flower-quest-main-visual.jpg" alt="ネネは花を咲かせたい！のメインビジュアル">
-          <figcaption id="main-visual-title">ネネは花を咲かせたい！のメインビジュアル</figcaption>
-        </figure>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <picture class="hero-media">
+          <source srcset="assets/hero-main.jpg" media="(min-width: 1px)" type="image/jpeg">
+          <img src="assets/nene-flower-quest-main-visual.jpg" width="4093" height="2894" alt="IWAMYCRAFTのメインビジュアル">
+        </picture>
+        <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-copy">
-          <p class="eyebrow">Creative workshop</p>
           <h1 id="hero-title" class="hero-title-logo">
-            <img src="assets/iwamycraft_logotype_white.png" alt="Iwamycraft">
+            <img src="assets/iwamycraft_logotype_white.png" width="2400" height="455" alt="IWAMYCRAFT">
           </h1>
-          <p class="tagline">つくりかけの世界へ。</p>
-          <p class="lead">
-            戦闘のないRPGや、小さな物語のある作品を制作しています。
-            完成品だけではなく、育っていく過程も含めて楽しめる創作工房です。
-          </p>
+          <p class="hero-tagline">こつこつ、制作中</p>
+          <p class="hero-intro">ゲームやイラストなど、つくったものをまとめています。</p>
         </div>
       </section>
 
-      <section class="section works" id="works" aria-labelledby="works-title">
-        <div class="section-head">
-          <p class="eyebrow">Works</p>
-          <h2 id="works-title">作品</h2>
-          <p>新しい作品から順に並べています。</p>
-        </div>
-        <div class="games-list" aria-label="ゲーム作品一覧">
-          <article class="game-entry">
-            <figure class="game-image has-image">
-              <img src="assets/nene-flower-quest-gameplay.png" alt="ネネは花を咲かせたい！のゲーム画面">
-            </figure>
-            <div class="game-copy">
-              <p class="status">公開中 / Game</p>
-              <h3>ネネは花を咲かせたい！</h3>
-              <p>
-                枯れかけた花を咲かせるための小さな冒険RPG。
-                1マップ、戦闘なし、マルチエンドの短編作品です。
-              </p>
-              <div class="game-actions" aria-label="作品リンク">
-                <a class="text-link" href="#links">itch.io</a>
-                <a class="text-link secondary" href="works/nene-flower-quest.html">詳しく見る</a>
+      <section class="section works-section" id="works" aria-labelledby="works-title">
+        <header class="section-heading">
+          <h2 id="works-title">Games</h2>
+          <p>制作したゲームをまとめています。</p>
+        </header>
+        <div class="games-grid" id="games-grid" aria-live="polite">
+          <article class="game-card game-card-static">
+            <a class="game-card-link" href="works/nene-flower-quest.html" aria-label="ネネは花を咲かせたい！の詳細を見る">
+              <figure class="game-card-media">
+                <img src="assets/nene-flower-quest-gameplay.png" width="1508" height="1112" alt="ネネは花を咲かせたい！のゲーム画面">
+              </figure>
+              <div class="game-card-copy">
+                <span class="status-label">公開中</span>
+                <h3>ネネは花を咲かせたい！</h3>
+                <p>枯れかけた花を咲かせる、1マップ・戦闘なし・マルチエンドの短編RPGです。</p>
+                <span class="inline-cta">作品を見る <span aria-hidden="true">→</span></span>
               </div>
-            </div>
-          </article>
-          <article class="game-entry is-upcoming">
-            <figure class="game-image placeholder-image">
-              <figcaption>ここに次の作品のイメージ</figcaption>
-            </figure>
-            <div class="game-copy">
-              <p class="status">準備中 / Next game</p>
-              <h3>準備中の作品</h3>
-              <p>
-                次のゲームや小さな物語が形になってきたら、
-                ここに作品画像と紹介文を追加していきます。
-              </p>
-            </div>
+            </a>
           </article>
         </div>
       </section>
 
-      <section class="section creator" id="creator" aria-labelledby="creator-title">
-        <div class="section-head">
-          <p class="eyebrow">Creator</p>
-          <h2 id="creator-title">制作者</h2>
-          <p>作品をつくっている人のこと。</p>
-        </div>
-        <div class="creator-body">
-          <figure class="creator-portrait sprite-portrait" aria-label="いわみしょうの歩行ドット絵">
-            <span class="creator-sprite" aria-hidden="true"></span>
-            <figcaption>歩行ドット絵</figcaption>
+      <section class="section art-section" id="art-goods" aria-labelledby="art-title">
+        <header class="section-heading compact-heading">
+          <h2 id="art-title">Illustration / Goods</h2>
+          <p>ゲームのイラストや、キャラクターグッズを制作しています。</p>
+        </header>
+        <div class="art-layout">
+          <figure class="art-feature">
+            <img src="assets/洞窟殺人事件イメージ.jpg" width="2000" height="2000" loading="lazy" alt="IWAMYCRAFTのキャラクターイラスト">
+            <figcaption>Illustration</figcaption>
           </figure>
-          <div class="creator-copy">
-            <p class="creator-name">いわみしょう</p>
-            <p>
-              個人ゲームクリエイター、イラストレーター。
-              戦闘のないRPGや、小さな物語のある作品を制作しています。
-            </p>
-            <p>
-              現在はゲーム制作を中心に、
-              キャラクターやグッズの展開にも取り組んでいます。
-            </p>
-          </div>
+          <figure class="art-detail">
+            <img src="assets/nene-flower-quest-character-sprites.png" width="768" height="512" loading="lazy" alt="ネネは花を咲かせたい！のキャラクタースプライト">
+            <figcaption>Character works</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="section follow" id="links" aria-labelledby="links-title">
-        <div class="section-head">
-          <p class="eyebrow">Links</p>
-          <h2 id="links-title">リンク</h2>
-          <p>公開先や制作記録をまとめています。</p>
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="about-mark" aria-hidden="true">
+          <img src="assets/iwamy-sho-walk-sprite.png" width="256" height="256" alt="">
         </div>
-        <div class="follow-list" aria-label="外部リンク一覧">
-          <a href="#links" aria-label="Xのリンクは準備中です">
-            <span class="link-badge">X</span>
-            <span class="link-copy">
-              <strong>制作の記録</strong>
-              <small>日々の更新や短いお知らせ</small>
-            </span>
-          </a>
-          <a href="#links" aria-label="noteのリンクは準備中です">
-            <span class="link-badge">note</span>
-            <span class="link-copy">
-              <strong>制作ノート</strong>
-              <small>作品づくりの話、考えたこと</small>
-            </span>
-          </a>
-          <a href="#links" aria-label="itch.ioのリンクは準備中です">
-            <span class="link-badge">itch.io</span>
-            <span class="link-copy">
-              <strong>ゲームを遊ぶ</strong>
-              <small>公開中のゲーム、体験版</small>
-            </span>
-          </a>
-          <a href="#links" aria-label="BOOTHのリンクは準備中です">
-            <span class="link-badge">BOOTH</span>
-            <span class="link-copy">
-              <strong>グッズを見る</strong>
-              <small>ステッカー、ZINEなど</small>
-            </span>
-          </a>
+        <div class="about-copy">
+          <h2 id="about-title">いわみしょう <span>/ IWAMYCRAFT</span></h2>
+          <p>戦闘のない短編RPGを中心に、ゲームやイラストを個人で制作しています。</p>
         </div>
+      </section>
+
+      <section class="section links-section" id="links" aria-labelledby="links-title">
+        <header class="section-heading compact-heading">
+          <h2 id="links-title">Links / Contact</h2>
+          <p>作品の公開先や制作記録をまとめています。お問い合わせ窓口は準備中です。</p>
+        </header>
+        <ul class="link-list" aria-label="外部サービス一覧">
+          <li><span><strong>X</strong><small>制作中のこと</small></span><em>準備中</em></li>
+          <li><span><strong>note</strong><small>制作ノート</small></span><em>準備中</em></li>
+          <li><span><strong>itch.io</strong><small>ゲーム公開</small></span><em>準備中</em></li>
+          <li><span><strong>BOOTH</strong><small>グッズ</small></span><em>準備中</em></li>
+          <li><span><strong>pixiv</strong><small>イラスト</small></span><em>準備中</em></li>
+          <li><span><strong>Contact</strong><small>お問い合わせ</small></span><em>準備中</em></li>
+        </ul>
       </section>
     </main>
 
     <footer class="site-footer">
-      <img src="assets/iwamycraft_logo_light.png" alt="Iwamycraft">
-      <div class="footer-copy">
-        <small>&copy; 2026 Iwamycraft</small>
-        <small>Works by いわみ しょう</small>
-        <small class="analytics-note">このサイトでは、個人を追跡しないアクセス解析を利用しています。</small>
-      </div>
+      <img src="assets/iwamycraft_logotype_dark.png" width="1129" height="323" alt="IWAMYCRAFT">
+      <small>&copy; 2026 IWAMYCRAFT / いわみしょう</small>
     </footer>
 
-    <script>
-      document.body.classList.add("js-ready");
-
-      const revealTargets = document.querySelectorAll(
-        ".section-head, .creator-portrait, .creator-copy, .follow-list a"
-      );
-
-      revealTargets.forEach((target) => {
-        target.setAttribute("data-reveal", "");
-      });
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { rootMargin: "0px 0px -12% 0px", threshold: 0.16 }
-      );
-
-      revealTargets.forEach((target) => observer.observe(target));
-    </script>
-    <!-- Cloudflare Web Analytics -->
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"ad9c7e18a9a74dd8a6b2a23b549dd7f2"}'></script>
-    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>
