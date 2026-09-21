@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-21",
+  "framework": "vanilla-html",
+  "designSystem": "06_HP/design.md",
+  "motion": "css-hover-only",
+  "spacing": "4pt",
+  "preserved": ["brand palette", "existing logos", "existing work assets"]
+}
