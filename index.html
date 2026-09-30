@@ -7,16 +7,21 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="IWAMYCRAFT | こつこつ、制作中">
     <meta property="og:description" content="戦闘のない短編RPGを中心に、ゲームやイラストを個人で制作しています。">
-    <meta property="og:image" content="assets/ogp-logo-base.png">
+    <meta property="og:url" content="https://www.iwamycraft.com/">
+    <meta property="og:image" content="https://www.iwamycraft.com/assets/ogp-logo-base.png">
+    <meta property="og:image:alt" content="IWAMYCRAFTのロゴ">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.iwamycraft.com/assets/ogp-logo-base.png">
+    <meta name="twitter:image:alt" content="IWAMYCRAFTのロゴ">
     <title>IWAMYCRAFT | こつこつ、制作中</title>
+    <link rel="canonical" href="https://www.iwamycraft.com/">
     <link rel="icon" href="assets/favicon.ico" sizes="any">
     <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-    <link rel="stylesheet" href="tokens.css?v=20260921">
-    <link rel="stylesheet" href="styles.css?v=20260921">
-    <script defer src="games-data.js?v=20260921"></script>
-    <script defer src="site.js?v=20260921"></script>
+    <link rel="stylesheet" href="tokens.css?v=20260930-7">
+    <link rel="stylesheet" href="styles.css?v=20260930-8">
+    <script defer src="games-data.js?v=20260930-7"></script>
+    <script defer src="site.js?v=20260930-7"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">本文へ移動</a>
@@ -25,18 +30,18 @@
         <img src="assets/iwamycraft_logo_dark.png" width="772" height="292" alt="IWAMYCRAFT">
       </a>
       <nav class="site-nav" aria-label="主要ナビゲーション">
-        <a href="#works">Games</a>
-        <a href="#art-goods">Art &amp; Goods</a>
-        <a href="#about">About</a>
-        <a href="#links">Links</a>
+        <a href="#works">GAMES</a>
+        <a href="#illustration">ART</a>
+        <a href="#about">CREATOR</a>
       </nav>
     </header>
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <picture class="hero-media">
-          <source srcset="assets/hero-main.jpg" media="(min-width: 1px)" type="image/jpeg">
-          <img src="assets/nene-flower-quest-main-visual.jpg" width="4093" height="2894" alt="IWAMYCRAFTのメインビジュアル">
+          <source srcset="assets/hero-mobile.jpg" media="(max-width: 47.99rem)" type="image/jpeg">
+          <source srcset="assets/hero-desktop.jpg" media="(min-width: 48rem)" type="image/jpeg">
+          <img src="assets/hero-desktop.jpg" width="2400" height="480" alt="IWAMYCRAFTのメインビジュアル" decoding="async" fetchpriority="high">
         </picture>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-copy">
@@ -44,109 +49,92 @@
             <img src="assets/iwamycraft_logotype_white.png" width="2400" height="455" alt="IWAMYCRAFT">
           </h1>
           <p class="hero-tagline">こつこつ、制作中</p>
-          <p class="hero-intro">ゲームやイラストなど、つくったものをまとめています。</p>
+          <p class="hero-intro">短編ゲームとイラストを制作する、IWAMYCRAFTの公式サイトです。</p>
         </div>
       </section>
 
       <section class="section works-section" id="works" aria-labelledby="works-title">
         <header class="section-heading">
-          <h2 id="works-title">Games</h2>
-          <p>制作したゲームをまとめています。</p>
+          <h2 id="works-title">GAMES</h2>
         </header>
         <div class="games-grid" id="games-grid" aria-live="polite">
           <article class="game-card game-card-static">
             <a class="game-card-link" href="works/nene-flower-quest.html" aria-label="ネネは花を咲かせたい！の詳細を見る">
               <figure class="game-card-media">
-                <img src="assets/nene-flower-quest-gameplay.png" width="1508" height="1112" alt="ネネは花を咲かせたい！のゲーム画面">
+                <img src="assets/nene-flower-quest-gameplay.png" width="1508" height="1112" loading="lazy" decoding="async" alt="ネネは花を咲かせたい！のゲーム画面">
+                <span class="status-label">制作中</span>
               </figure>
               <div class="game-card-copy">
-                <span class="status-label">公開中</span>
                 <h3>ネネは花を咲かせたい！</h3>
-                <p>枯れかけた花を咲かせる、1マップ・戦闘なし・マルチエンドの短編RPGです。</p>
-                <span class="inline-cta">作品を見る <span aria-hidden="true">→</span></span>
               </div>
             </a>
           </article>
         </div>
       </section>
 
-      <section class="section art-section" id="art-goods" aria-labelledby="art-title">
+      <section class="section art-section" id="illustration" aria-labelledby="art-title">
         <header class="section-heading compact-heading">
-          <h2 id="art-title">Illustration / Goods</h2>
-          <p>ゲームのイラストや、キャラクターグッズを制作しています。</p>
+          <h2 id="art-title">ART</h2>
         </header>
         <div class="art-layout">
-          <figure class="art-feature">
-            <img src="assets/iwamycraft-character-illustration.jpg" width="2000" height="2000" loading="lazy" alt="IWAMYCRAFTのキャラクターイラスト">
-            <figcaption>Illustration</figcaption>
-          </figure>
-          <figure class="art-detail">
-            <img src="assets/nene-flower-quest-character-sprites.png" width="768" height="512" loading="lazy" alt="ネネは花を咲かせたい！のキャラクタースプライト">
-            <figcaption>Character works</figcaption>
-          </figure>
+          <button class="illustration-thumb art-feature" type="button" data-gallery-index="0" data-full-src="assets/iwamycraft-character-illustration.jpg" aria-label="IWAMYCRAFTのキャラクターイラストを大きく表示">
+            <img src="assets/iwamycraft-character-illustration-thumb.jpg" width="400" height="400" loading="lazy" decoding="async" alt="IWAMYCRAFTのキャラクターイラスト">
+            <span class="illustration-caption">Illustration</span>
+          </button>
+          <button class="illustration-thumb art-detail" type="button" data-gallery-index="1" data-full-src="assets/nene-flower-quest-character-sprites.png" aria-label="ネネは花を咲かせたい！のキャラクタースプライトを大きく表示">
+            <img src="assets/nene-flower-quest-character-sprites.png" width="768" height="512" loading="lazy" decoding="async" alt="ネネは花を咲かせたい！のキャラクタースプライト">
+            <span class="illustration-caption">Character works</span>
+          </button>
         </div>
+        <a class="illustration-more" href="https://www.pixiv.net/users/88117464" target="_blank" rel="noopener noreferrer" aria-label="pixivでもっと見る">
+          <span>もっと見る</span><span aria-hidden="true">▶︎</span><img src="assets/social/pixiv.svg" width="28" height="28" alt="">
+        </a>
       </section>
 
-      <section class="section about-section" id="about" aria-labelledby="about-title">
-        <div class="about-mark" aria-hidden="true">
-          <img src="assets/iwamy-sho-walk-sprite.png" width="256" height="256" alt="">
+      <dialog class="lightbox" id="illustration-lightbox" aria-labelledby="lightbox-caption">
+        <div class="lightbox-shell">
+          <button class="lightbox-close" type="button" aria-label="閉じる" title="閉じる">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+          <button class="lightbox-nav lightbox-prev" type="button" aria-label="前の画像" title="前の画像">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <figure class="lightbox-figure">
+            <div class="lightbox-media"><img decoding="async" alt=""></div>
+            <figcaption id="lightbox-caption"></figcaption>
+          </figure>
+          <button class="lightbox-nav lightbox-next" type="button" aria-label="次の画像" title="次の画像">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
         </div>
+      </dialog>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
         <div class="about-copy">
-          <h2 id="about-title">いわみしょう <span>/ IWAMYCRAFT</span></h2>
+          <h2 id="about-title">CREATOR</h2>
+          <div class="about-identity">
+            <div class="about-mark" aria-hidden="true">
+              <span class="about-sprite"></span>
+            </div>
+            <h3>いわみしょう</h3>
+          </div>
           <p>戦闘のない短編RPGを中心に、ゲームやイラストを個人で制作しています。</p>
         </div>
       </section>
 
       <section class="section links-section" id="links" aria-labelledby="links-title">
-        <header class="section-heading compact-heading">
-          <h2 id="links-title">Links / Contact</h2>
-          <p>作品の公開先や制作記録をまとめています。お問い合わせはメールで受け付けています。</p>
-        </header>
-        <ul class="link-list" aria-label="外部サービス一覧">
-          <li class="link-item-active">
-            <a class="link-list-link" href="https://twitter.com/iwamy_s" target="_blank" rel="noopener noreferrer">
-              <span><strong>X</strong><small>制作中のこと</small></span>
-              <em>投稿を見る ↗</em>
-            </a>
-          </li>
-          <li><span><strong>note</strong><small>制作ノート</small></span><em>準備中</em></li>
-          <li class="link-item-active">
-            <a class="link-list-link" href="https://www.freem.ne.jp/brand/13383" target="_blank" rel="noopener noreferrer">
-              <span><strong>ふりーむ！</strong><small>ゲーム公開</small></span>
-              <em>ゲームを見る ↗</em>
-            </a>
-          </li>
-          <li class="link-item-active">
-            <a class="link-list-link" href="https://iwamycraft.itch.io" target="_blank" rel="noopener noreferrer">
-              <span><strong>itch.io</strong><small>ゲーム公開</small></span>
-              <em>ゲームを見る ↗</em>
-            </a>
-          </li>
-          <li class="link-item-active">
-            <a class="link-list-link" href="https://iwamysho.fanbox.cc/" target="_blank" rel="noopener noreferrer">
-              <span><strong>pixivFANBOX</strong><small>制作支援</small></span>
-              <em>ページを見る ↗</em>
-            </a>
-          </li>
-          <li class="link-item-active">
-            <a class="link-list-link" href="https://iwamycraft.booth.pm/" target="_blank" rel="noopener noreferrer">
-              <span><strong>BOOTH</strong><small>グッズ</small></span>
-              <em>ショップを見る ↗</em>
-            </a>
-          </li>
-          <li class="link-item-active">
-            <a class="link-list-link" href="https://www.pixiv.net/users/88117464" target="_blank" rel="noopener noreferrer">
-              <span><strong>pixiv</strong><small>イラスト</small></span>
-              <em>作品を見る ↗</em>
-            </a>
-          </li>
-          <li class="link-item-active">
-            <a class="link-list-link" href="mailto:iwamycraft@gmail.com?subject=IWAMYCRAFT%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
-              <span><strong>Contact</strong><small>iwamycraft@gmail.com</small></span>
-              <em>メールを送る →</em>
-            </a>
-          </li>
+        <h2 class="visually-hidden" id="links-title">LINKS</h2>
+        <ul class="social-icon-list" aria-label="外部サービス一覧">
+          <li><a class="social-icon-link" href="https://twitter.com/iwamy_s" target="_blank" rel="noopener noreferrer" aria-label="X" title="X"><img src="assets/social/x.svg" width="48" height="48" alt=""></a></li>
+          <li><a class="social-icon-link" href="https://www.pixiv.net/users/88117464" target="_blank" rel="noopener noreferrer" aria-label="pixiv" title="pixiv"><img src="assets/social/pixiv.svg" width="48" height="48" alt=""></a></li>
+          <li><a class="social-icon-link" href="https://www.freem.ne.jp/brand/13383" target="_blank" rel="noopener noreferrer" aria-label="ふりーむ！" title="ふりーむ！"><img src="assets/social/freem.png" width="180" height="180" alt=""></a></li>
+          <li><a class="social-icon-link" href="https://iwamycraft.itch.io" target="_blank" rel="noopener noreferrer" aria-label="itch.io" title="itch.io"><img src="assets/social/itchio.svg" width="48" height="48" alt=""></a></li>
+          <li><a class="social-icon-link" href="https://iwamycraft.booth.pm/" target="_blank" rel="noopener noreferrer" aria-label="BOOTH" title="BOOTH"><img src="assets/social/booth.png" width="180" height="180" alt=""></a></li>
         </ul>
+        <a class="email-link" href="mailto:iwamycraft@gmail.com?subject=IWAMYCRAFT%E3%81%B8%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+          <span>iwamycraft@gmail.com</span>
+        </a>
       </section>
     </main>
 
